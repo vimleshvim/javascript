@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 500px;
+            width: 600px;
+            border: 5px solid red;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+  <h1>change slider</h1>  
+  <img src="1.jpg">
+  </center>
+  <script>
+    var arr=["1.jpg","2.jpeg","3.jpeg","4.jpeg"]
+    var i=0
+function slider()
+{
+  var im=  document.querySelector("img")
+  im.src=arr[i]
+  i++
+  if(i==4)
+  {
+    i=0;
+  }
+}
+window.setInterval("slider()",2000);
+
+    </script>
+</body>
+</html>

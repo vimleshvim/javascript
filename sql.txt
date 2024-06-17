@@ -1,0 +1,45 @@
+select col,aggregate_function() from condition group by col;
+
+group by clause is used to make groups of one or more records that have same 
+value based on a column.
+
+Example:
+select col1,col2,count(col_name) from group by col1,col2;
+select col1,count(col_name) from  where (condition) group by ccol2;
+LIKE OPERATOR
+=============
+LIKE:like operator is used compare data with a part of data or pattern.
+
+%
+-
+like 'a%' =>start with 'a'
+like '%a' =>End with 'a'
+like '%an%' => have 'an' in any position.
+like 'a%n'  =>start with 'a' and ends with 'n'.
+like '_m%' =m in the second position 
+like '_an'=>a in the second position and n in the third position
+
+ select city_name, count(id) from city a inner join student2 b on a.c_id=b.c_id group by city_name;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
